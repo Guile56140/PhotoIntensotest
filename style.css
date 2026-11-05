@@ -1,0 +1,263 @@
+body { /* Toute la page */
+  margin: 0; /* Supprime la marge du navigateur */
+  font-family: 'Open Sans', sans-serif; /* Police des textes et du menu */
+  background: #f2f2f2; /* Gris clair autour de la page */
+} /* Fin */
+
+a { /* Tous les liens */
+  text-decoration: none; /* Jamais soulignés (sauf le menu, plus bas) */
+} /* Fin */
+
+.page { /* Bloc qui contient la page */
+  width: 1200px; /* Largeur de la page */
+  margin: 0 auto; /* Centre le bloc */
+  background: #fff; /* Fond blanc */
+  text-align: center; /* Centre le logo */
+} /* Fin */
+
+.logo { /* Le titre du site */
+  margin: 0; /* Supprime la marge du paragraphe */
+  padding-top: 10px; /* Espace au-dessus */
+  font-family: 'Pacifico', cursive; /* Police Pacifico */
+  font-size: 32px; /* Taille du texte */
+  color: #f78a76; /* Couleur corail */
+} /* Fin */
+
+.menu { /* La liste du menu */
+  display: flex; /* Place les liens côte à côte */
+  justify-content: center; /* Centre les liens */
+  gap: 19px; /* Espace entre les liens */
+  list-style: none; /* Supprime les puces */
+  padding: 0; /* Supprime le décalage de la liste */
+  margin: 28px 0 33px; /* Espace au-dessus et en dessous du menu */
+} /* Fin */
+
+.menu a { /* Les liens du menu */
+  color: #000; /* Texte noir */
+  font-size: 18px; /* Taille du texte */
+} /* Fin */
+
+.menu a:hover, .menu a.actif { /* Au survol et pour la page courante */
+  color: #f78a76; /* Texte corail */
+  text-decoration: underline; /* Soulignement : seule exception de la page */
+} /* Fin */
+
+.hero { /* Bloc photo de paysage */
+  display: flex; /* Active flexbox */
+  flex-direction: column; /* Éléments les uns sous les autres */
+  justify-content: center; /* Centre verticalement */
+  align-items: center; /* Centre horizontalement */
+  height: 456px; /* Hauteur du bloc */
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/paysage.jpg'); /* Photo avec un voile sombre */
+  background-size: cover; /* La photo remplit tout le bloc */
+  background-position: center top; /* Cadrage sur le haut de la photo */
+} /* Fin */
+
+.hero h1 { /* Titre sur la photo */
+  margin: 0 0 14px; /* Espace sous le titre */
+  font-family: 'Montserrat', sans-serif; /* Police des titres */
+  font-size: 32px; /* Taille du texte */
+  color: #f78a76; /* Corail */
+} /* Fin */
+
+.hero p { /* Texte sur la photo */
+  width: 720px; /* Largeur du bandeau */
+  box-sizing: border-box; /* Le padding reste dans les 720 px */
+  margin: 0 0 30px; /* Espace avant le bouton */
+  padding: 0 70px; /* Le texte passe sur 2 lignes */
+  line-height: 1.65; /* Espace entre les lignes */
+  color: #fff; /* Texte blanc */
+  background: rgba(0, 0, 0, 0.4); /* Bandeau noir transparent */
+} /* Fin */
+
+.bouton { /* Bouton */
+  padding: 10px 37px; /* Taille du bouton */
+  font-family: 'Montserrat', sans-serif; /* Police des boutons */
+  font-size: 12px; /* Taille du texte */
+  font-weight: 700; /* Texte en gras */
+  text-transform: uppercase; /* Texte en majuscules */
+  color: #fff; /* Texte blanc */
+  background: #f78a76; /* Fond corail */
+} /* Fin */
+
+.services { /* Bloc des quatre services */
+  display: flex; /* Active flexbox : colonne, cercle, colonne côte à côte */
+  justify-content: center; /* Centre l'ensemble horizontalement */
+  align-items: center; /* Centre les colonnes par rapport au cercle */
+  gap: 48px; /* Espace entre les colonnes et le cercle */
+  padding: 65px 0; /* Espace au-dessus et en dessous */
+} /* Fin */
+
+.colonne { /* Une colonne de deux services */
+  display: flex; /* Active flexbox */
+  flex-direction: column; /* Services l'un sous l'autre */
+  gap: 40px; /* Espace entre les deux services */
+  width: 196px; /* Largeur de la colonne */
+} /* Fin */
+
+.colonne-gauche { /* Colonne de gauche */
+  text-align: right; /* Texte aligné à droite, côté cercle */
+} /* Fin */
+
+.colonne-droite { /* Colonne de droite */
+  text-align: left; /* Texte aligné à gauche, côté cercle */
+} /* Fin */
+
+.colonne h2 { /* Titres des services */
+  margin: 0 0 18px; /* Espace sous le titre */
+  font-family: 'Montserrat', sans-serif; /* Police des titres */
+  font-size: 17px; /* Taille du texte */
+  color: #25A2C3; /* Bleu */
+} /* Fin */
+
+.colonne p { /* Textes des services */
+  margin: 0; /* Supprime la marge du paragraphe */
+  font-size: 12px; /* Petit texte */
+  font-weight: 300; /* Police fine */
+  line-height: 1.5; /* Espace entre les lignes */
+  color: #888; /* Gris */
+} /* Fin */
+
+.cercle { /* Photo ronde */
+  width: 214px; /* Largeur */
+  height: 214px; /* Hauteur, identique pour faire un cercle */
+  border-radius: 50%; /* Arrondit les coins à 100 % : forme ronde */
+  object-fit: cover; /* Recadre la photo sans la déformer */
+} /* Fin */
+
+.avis { /* Bandeau corail */
+  display: flex; /* Active flexbox */
+  flex-direction: column; /* Éléments les uns sous les autres */
+  align-items: center; /* Centre horizontalement */
+  padding: 60px 0 45px; /* Espace au-dessus et en dessous (hauteur totale d'environ 260 px) */
+  color: #fff; /* Texte blanc sur fond corail */
+  background: #f78a76; /* Fond corail */
+} /* Fin */
+
+.avis h2 { /* Titre du bandeau */
+  margin: 0 0 30px; /* Espace sous le titre */
+  font-family: 'Montserrat', sans-serif; /* Police des titres */
+  font-size: 20px; /* Taille du texte */
+} /* Fin */
+
+.avis blockquote { /* Citation */
+  width: 470px; /* Largeur : le texte passe sur 2 lignes */
+  margin: 0 0 21px; /* Espace avant le bouton */
+  font-size: 12px; /* Petit texte */
+  font-weight: 600; /* Semi-gras */
+  line-height: 1.5; /* Espace entre les lignes */
+  color: rgba(255, 255, 255, 0.8); /* Blanc légèrement transparent */
+} /* Fin */
+
+.avis blockquote p { /* Texte de l'avis */
+  margin: 0; /* Supprime la marge du paragraphe */
+  font-style: italic; /* Texte en italique */
+} /* Fin */
+
+.avis cite { /* Nom de l'auteur */
+  display: block; /* Passe sur sa propre ligne */
+  font-style: normal; /* Pas d'italique pour le nom */
+} /* Fin */
+
+.bouton-blanc { /* Bouton blanc du bandeau */
+  padding: 6px 10px; /* Bouton plus petit */
+  text-transform: none; /* Garde les majuscules et minuscules d'origine */
+  color: #f78a76; /* Texte corail */
+  background: #fff; /* Fond blanc */
+  border-radius: 3px; /* Coins légèrement arrondis */
+} /* Fin */
+
+.articles { /* Section des trois cartes */
+  display: flex; /* Active flexbox : les cartes côte à côte */
+  justify-content: center; /* Centre les cartes */
+  gap: 37px; /* Espace entre les cartes */
+  padding: 64px 0 66px; /* Espace au-dessus et en dessous */
+} /* Fin */
+
+.carte { /* Une carte */
+  display: flex; /* Active flexbox */
+  flex-direction: column; /* Photo au-dessus, texte en dessous */
+  width: 213px; /* Largeur de la carte */
+  overflow: hidden; /* Les coins arrondis découpent la photo */
+  text-align: left; /* Texte aligné à gauche */
+  border: 1px solid #ddd; /* Fin contour gris */
+  border-radius: 3px; /* Coins légèrement arrondis */
+} /* Fin */
+
+.carte img { /* Photo de la carte */
+  display: block; /* Supprime l'espace sous l'image */
+  width: 100%; /* Prend toute la largeur de la carte */
+  height: 102px; /* Même hauteur pour les trois photos */
+  object-fit: cover; /* Recadre la photo sans la déformer */
+} /* Fin */
+
+.carte-texte { /* Zone de texte de la carte */
+  padding: 19px 17px 17px; /* Espace intérieur */
+} /* Fin */
+
+.carte h2 { /* Titre de la carte */
+  margin: 0 0 20px; /* Espace sous le titre */
+  font-family: 'Montserrat', sans-serif; /* Police des titres */
+  font-size: 16px; /* Taille du texte */
+  line-height: 1.2; /* Hauteur de ligne */
+} /* Fin */
+
+.carte h2 a { /* Lien du titre */
+  color: #25A2C3; /* Bleu */
+} /* Fin */
+
+.carte p { /* Texte de la carte */
+  margin: 0; /* Supprime la marge du paragraphe */
+  font-size: 12px; /* Petit texte */
+  font-weight: 300; /* Police fine */
+  line-height: 1.5; /* Espace entre les lignes */
+  color: #888; /* Gris */
+} /* Fin */
+
+.pied { /* Pied de page bleu */
+  display: flex; /* Active flexbox */
+  flex-direction: column; /* Éléments les uns sous les autres */
+  align-items: center; /* Centre horizontalement */
+  padding-top: 65px; /* Espace au-dessus du titre */
+  color: #fff; /* Texte blanc sur fond bleu */
+  background: #25A2C3; /* Fond bleu */
+} /* Fin */
+
+.pied h2 { /* Titre du pied de page */
+  margin: 0 0 29px; /* Espace sous le titre */
+  font-family: 'Montserrat', sans-serif; /* Police des titres */
+  font-size: 20px; /* Taille du texte */
+  line-height: 1.2; /* Hauteur de ligne */
+} /* Fin */
+
+.contacts { /* Les trois coordonnées */
+  display: flex; /* Active flexbox : coordonnées côte à côte */
+  gap: 47px; /* Espace entre les coordonnées */
+  margin-bottom: 69px; /* Espace avant la ligne de séparation */
+  font-style: normal; /* Retire l'italique de la balise address */
+  font-size: 13px; /* Taille du texte */
+  font-weight: 300; /* Police fine */
+  line-height: 18px; /* Hauteur de ligne */
+} /* Fin */
+
+.contacts a { /* Liens des coordonnées */
+  color: rgba(255, 255, 255, 0.8); /* Blanc légèrement transparent */
+} /* Fin */
+
+.contacts i { /* Icônes Font Awesome */
+  margin-right: 3px; /* Espace entre l'icône et le texte */
+  font-size: 18px; /* Taille des icônes */
+} /* Fin */
+
+.copyright { /* Ligne du bas */
+  align-self: stretch; /* Prend toute la largeur du pied de page */
+  margin: 0; /* Supprime la marge du paragraphe */
+  padding: 16px 0 17px; /* Espace au-dessus et en dessous du texte */
+  font-size: 9px; /* Très petit texte */
+  line-height: 1.3; /* Hauteur de ligne */
+  border-top: 1px solid rgba(255, 255, 255, 0.3); /* Ligne de séparation claire */
+} /* Fin */
+
+.copyright strong { /* Mots en gras */
+  font-weight: 700; /* Gras */
+} /* Fin */

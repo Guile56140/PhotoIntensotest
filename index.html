@@ -1,0 +1,109 @@
+<!DOCTYPE html> <!-- Document HTML5 -->
+<html lang="fr"> <!-- Langue : français (utile pour le référencement) -->
+
+<head> <!-- Informations de la page -->
+  <meta charset="UTF-8"> <!-- Accents affichés correctement -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Bonne pratique pour les moteurs de recherche -->
+  <title>Photo Intenso | Photographie noir et blanc et paysages</title> <!-- Titre de l'onglet et de Google -->
+  <meta name="description" content="Photo Intenso : des images incroyables en noir et blanc. Paysages, portraits, architecture et photos en action."> <!-- Résumé affiché dans Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&family=Montserrat:wght@700&display=swap" rel="stylesheet"> <!-- Charge Pacifico, Open Sans (fin, normal, semi-gras, gras, italique) et Montserrat -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- Charge Font Awesome pour les icônes du pied de page -->
+  <link rel="stylesheet" href="style.css"> <!-- Relie le CSS -->
+</head> <!-- Fin des informations -->
+
+<body> <!-- Contenu visible -->
+  <div class="page"> <!-- Bloc de 1200 px qui contient toute la page -->
+
+    <header> <!-- En-tête : logo puis menu -->
+      <p class="logo">Photo Intenso</p> <!-- Le titre du site, en Pacifico -->
+      <nav> <!-- Zone du menu -->
+        <ul class="menu"> <!-- Liste des liens -->
+          <li><a class="actif" href="#">Accueil</a></li> <!-- Lien simulé, page courante -->
+          <li><a href="#">A propos</a></li> <!-- Lien simulé -->
+          <li><a href="#">Galerie</a></li> <!-- Lien simulé -->
+          <li><a href="#">Contact</a></li> <!-- Lien simulé -->
+        </ul> <!-- Fin de la liste -->
+      </nav> <!-- Fin du menu -->
+    </header> <!-- Fin de l'en-tête -->
+ 
+
+    <main> <!-- Contenu principal de la page -->
+
+      <section class="hero"> <!-- Bloc avec la photo de paysage en fond -->
+        <h1>Des images incroyables</h1> <!-- Titre principal : un seul h1 par page -->
+        <p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod sed arcu cras consecuat lorem ipsum dolor sit amet.</p> <!-- Texte sur bandeau sombre -->
+        <a class="bouton" href="#">Plus d'infos</a> <!-- Bouton, lien simulé -->
+      </section> <!-- Fin du bloc photo -->
+
+      <section class="services"> <!-- Bloc des quatre services autour du cercle -->
+        <div class="colonne colonne-gauche"> <!-- Colonne de gauche, texte aligné à droite -->
+          <article> <!-- Premier service -->
+            <h2>Paysages</h2> <!-- Titre bleu -->
+            <p>Morbi in sem quis dui plalorem ipsum euismod in, pharetra sed ultricies.</p> <!-- Texte gris -->
+          </article> <!-- Fin du premier service -->
+          <article> <!-- Deuxième service -->
+            <h2>Tous en action</h2> <!-- Titre bleu -->
+            <p>Tristique yonve cursus jam nulla quam loreipsu gravida adipiscing lorem</p> <!-- Texte gris -->
+          </article> <!-- Fin du deuxième service -->
+        </div> <!-- Fin de la colonne de gauche -->
+        <img class="cercle" src="images/telephone.jpg" alt="Main tenant un smartphone qui photographie la mer en noir et blanc"> <!-- Photo ronde au centre -->
+        <div class="colonne colonne-droite"> <!-- Colonne de droite, texte aligné à gauche -->
+          <article> <!-- Troisième service -->
+            <h2>Au delà du temps</h2> <!-- Titre bleu -->
+            <p>Sed adipiscing ornare risus. Morbi estes blandit sit et amet, sagittis magna.</p> <!-- Texte gris -->
+          </article> <!-- Fin du troisième service -->
+          <article> <!-- Quatrième service -->
+            <h2>Portraits</h2> <!-- Titre bleu -->
+            <p>Pellentesque egestas sem. Suspendisse modo ullamcorper feugiat lorem.</p> <!-- Texte gris -->
+          </article> <!-- Fin du quatrième service -->
+        </div> <!-- Fin de la colonne de droite -->
+      </section> <!-- Fin du bloc des services -->
+
+      <section class="avis"> <!-- Bandeau corail : l'avis d'un client -->
+        <h2>Livrez-nous votre avis</h2> <!-- Titre blanc -->
+        <blockquote> <!-- Citation du client -->
+          <p>"Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra magna etiam lorem ultricies in diam. Sed arcu cras consequat."</p> <!-- Texte de l'avis, en italique -->
+          <cite>John H.</cite> <!-- Nom de l'auteur, sur sa propre ligne -->
+        </blockquote> <!-- Fin de la citation -->
+        <a class="bouton bouton-blanc" href="#">C'est à vous !</a> <!-- Bouton blanc, lien simulé -->
+      </section> <!-- Fin du bandeau corail -->
+
+      <section class="articles"> <!-- Section des trois cartes -->
+        <article class="carte"> <!-- Première carte -->
+          <img src="images/kayak.jpg" alt="Jeune femme en canoë sur un lac bordé de forêts"> <!-- Photo de la carte -->
+          <div class="carte-texte"> <!-- Zone de texte de la carte -->
+            <h2><a href="#">Sur la rivière</a></h2> <!-- Titre bleu, lien simulé -->
+            <p>Placerat ornare. Pellentesque od sed euismod in, pharetra ltricies edarcu cas consequat.</p> <!-- Texte gris -->
+          </div> <!-- Fin de la zone de texte -->
+        </article> <!-- Fin de la première carte -->
+        <article class="carte"> <!-- Deuxième carte -->
+          <img src="images/montagne.jpg" alt="Sommet de montagne enneigé sous les nuages"> <!-- Photo de la carte -->
+          <div class="carte-texte"> <!-- Zone de texte de la carte -->
+            <h2><a href="#">Ascension périlleuse</a></h2> <!-- Titre bleu, lien simulé -->
+            <p>Morbi in sem quis dui placerat Pellentesque odio nisi, euismod pharetra lorem ipsum.</p> <!-- Texte gris -->
+          </div> <!-- Fin de la zone de texte -->
+        </article> <!-- Fin de la deuxième carte -->
+        <article class="carte"> <!-- Troisième carte -->
+          <img src="images/escalier.jpg" alt="Escalier en spirale vu du dessus, architecture en noir et blanc"> <!-- Photo de la carte -->
+          <div class="carte-texte"> <!-- Zone de texte de la carte -->
+            <h2><a href="#">Architecture</a></h2> <!-- Titre bleu, lien simulé -->
+            <p>Nam dui mi, tincidunt quis, accu an porttitor, facilisis luctus que metus vulputate sem magna.</p> <!-- Texte gris -->
+          </div> <!-- Fin de la zone de texte -->
+        </article> <!-- Fin de la troisième carte -->
+      </section> <!-- Fin de la section des cartes -->
+
+    </main> <!-- Fin du contenu principal -->
+
+    <footer class="pied"> <!-- Pied de page bleu -->
+      <h2>Restons en contact</h2> <!-- Titre blanc -->
+      <address class="contacts"> <!-- Coordonnées de contact -->
+        <a href="#"><i class="fas fa-phone" aria-hidden="true"></i> (33)2 979 79797</a> <!-- Téléphone, icône Font Awesome, lien simulé -->
+        <a href="#"><i class="fas fa-envelope" aria-hidden="true"></i> information@photoinnspiro.bzh</a> <!-- Email, icône enveloppe, lien simulé -->
+        <a href="#"><i class="fas fa-location-dot" aria-hidden="true"></i> 123 Kerinon, VANNES, BZH 56000</a> <!-- Adresse, icône repère de lieu, lien simulé -->
+      </address> <!-- Fin des coordonnées -->
+      <p class="copyright">Exercice Sélection : <strong>GBS Vannes</strong>. Réalisé pour: <strong>Kercode</strong>.</p> <!-- Ligne du bas, avec deux mots en gras -->
+    </footer> <!-- Fin du pied de page -->
+
+  </div> <!-- Fin du bloc de 1200 px -->
+</body> <!-- Fin du contenu -->
+</html> <!-- Fin du document -->
